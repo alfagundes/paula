@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+	<title>Burritos</title>
+	<meta charset="utf-8">
+	<script src="js/burrito.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<div class="content">
+		<h1>Burritos</h1>
+		<div id="principal">
+			<div id="areaItens">
+				<table>
+					<!-- 1a linha - Títulos -->
+					<tr class="titTabela">
+						<th colspan="2">Escolha seu burrito</th>
+						<th class="titDireita">Preço Unit.</th>
+						<th>Qtd</th>
+						<th class="titDireita">Total</th>
+
+						<td rowspan="4"><span id="areaImagem"></span></td>
+					</tr>
+					<!-- 2a linha - Produto 1 -->
+					<tr>
+					<td></td>
+						<td>
+							<select id="produto1" name="produto1" onchange="CalcularProduto(1)">
+								<option value="">Escolha</option>
+							</select>
+						</td>
+						<td>
+							<input type="text" id="prProduto1" class="numero" value="0,00" readonly>
+						</td>
+						<td>
+							<input type="number" id="qtdProduto1" name="qtdProduto1" maxlength="2" class="quantidade"
+								value="0" min="0" max="99" onfocus="this.select()" onchange="CalcularProduto(1)">
+						</td>
+						<td>
+							<input type="text" id="somaProduto1" class="numero" value="0,00" readonly>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<span type="date"></span>
+		</div>
+		<script>
+			var $valorPedido = 0 // Definindo o valor do pedido (variável global)
+			popularListas()
+		</script>
+	</div>
+	</div>
+</body>
+
+</html>

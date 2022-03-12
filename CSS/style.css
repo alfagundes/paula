@@ -1,0 +1,72 @@
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*========================================ITENS================================= */
+h1 {
+  display: flex;
+  justify-content: center;
+  color: rgb(0, 26, 255);
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+.content {
+  margin-top: 100px;
+}
+#menu {
+  display: flex;
+  justify-content: space-around;
+}
+#principal {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 3px groove navy;
+  margin: auto;
+  padding: 15px;
+  width: 1020px;
+}
+h2 {
+  text-align: center;
+}
+#menu button {
+  border: 2px solid black;
+  padding: 5px;
+  text-align: center;
+  width: 240px;
+}
+
+.numero {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: navy;
+  text-align: right;
+  width: 150px;
+}
+
+.quantidade {
+  text-align: right;
+  width: 80px;
+}
+
+.atencao {
+  color: red;
+}
+
+.linha {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.coluna {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+.titTabela {
+  color: navy;
+}
+.titDireita {
+  text-align: right;
+}
